@@ -1,0 +1,50 @@
+package InputPrograms;
+
+import java.util.Scanner;
+
+public class InputProgramTest {
+
+     void numberComparator(int first ,int sec ,int thrd ,int forth)
+      {
+            if(first <sec)
+            {
+                System.out.println(first+" Number is smaller than "+ sec);
+
+            }
+            else if(sec < first)
+            {
+
+
+            }
+
+      }
+
+    void getNumbers()
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter First Number");
+        int firstNum = scanner.nextInt();
+
+        System.out.println("Enter Second Number");
+        int secondNum = scanner.nextInt();
+
+
+        System.out.println("Enter Third Number");
+        int thirdNum = scanner.nextInt();
+
+        System.out.println("Enter Forth Number");
+        int forthNum = scanner.nextInt();
+
+        numberComparator(firstNum ,secondNum ,thirdNum ,forthNum);
+
+
+    }
+
+    public static void main(String...args) {
+
+        InputProgramTest inputProgramTest = new InputProgramTest();
+
+        inputProgramTest.getNumbers();
+
+    }
+}
